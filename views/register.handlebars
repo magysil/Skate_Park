@@ -1,0 +1,41 @@
+<h1>{{>partials/title}}</h1>
+
+<div class="py-4">
+  <h2>{{>partials/titleTabla}}</h2>
+  <hr/>
+
+  <form id="registroForm" action="/registro" method="POST" enctype="multipart/form-data">
+    <div class="form-group row w-50 m-auto">
+      <div class="form-group col-12 col-sm-6">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" class="form-control m-auto" required>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" class="form-control m-auto" required>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control m-auto" required>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label for="confirmPassword">Repita la contraseña</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control m-auto" required>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label for="anos_experiencia">Años de experiencia</label>
+        <input type="number" id="anos_experiencia" name="anos_experiencia" class="form-control m-auto" required>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label for="especialidad">Especialidad</label>
+        <input type="text" id="especialidad" name="especialidad" class="form-control m-auto" required>
+      </div>
+      <div class="form-group col-12 col-sm-12 my-3">
+        <label for="foto">Foto de perfil</label>
+        <input type="file" id="foto" name="foto" required>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-info my-3">Registrarme</button>
+    <p><a href="/login"> Iniciar sesión</a></p>
+  </form>
+</div>
