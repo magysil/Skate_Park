@@ -1,8 +1,9 @@
-<h1>{{>partials/title}}</h1>
+ {{>partials/nav}}
 
-<div class="py-4">
-  <h2>{{>partials/titleTabla}}</h2>
-  <hr/>
+    <div class="my-5 py-4">
+      <h2>{{>partials/titleTabla}}</h2>
+
+      <hr />
 
   <form id="registroForm" action="/registro" method="POST" enctype="multipart/form-data">
     <div class="form-group row w-50 m-auto">
@@ -35,7 +36,7 @@
         <input type="file" id="foto" name="foto" required>
       </div>
     </div>
-    <button type="submit" class="btn btn-info my-3">Registrarme</button>
+    <button type="submit" class="btn btn-primary my-3">Registrarme</button>
     <p><a href="/login"> Iniciar sesión</a></p>
   </form>
 </div>

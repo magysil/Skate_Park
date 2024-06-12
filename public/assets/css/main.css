@@ -7,6 +7,10 @@ body {
     padding: 40px 100px;
     
   }
+
+  .skater-icon{
+    filter: invert(76%) sepia(38%) saturate(2813%) hue-rotate(349deg) brightness(89%) contrast(91%);
+  }  
   
   h1{
       font-style: italic;
@@ -36,14 +40,27 @@ body {
       text-align: center;
   }
 
-
-
   .foto{
     width: 100px;
     height: 100px;
     object-fit:cover ; 
     object-position: center;   
   } 
+
+  .footer{
+    border-top: 1px solid rgb(181 151 40);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212529;
+}
+.footer p{
+    margin: 0;
+    padding: 1rem 0;
+    color: white;
+}
   
   
   
