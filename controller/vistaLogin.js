@@ -4,7 +4,7 @@ import { getSkeaterEmail } from '../models/PostLoginSkater.js';
 
 const secretKey = process.env.SECRET_KEY
 export const vistaLogin= async (req,res) => {    
-    res.render("Login",{
+    res.render("login",{
         layout:"main",
         title: "Skate Park",
         titleTabla:"Iniciar Sesión"        
