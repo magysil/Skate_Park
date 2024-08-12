@@ -17,7 +17,7 @@ CREATE TABLE skaters (
 /* Añadir Usuario con rol administrador en la base de datos*/
 INSERT INTO skaters (email, nombre, password, anos_experiencia, especialidad, foto, estado, rol)
 VALUES (
-    'admin@gmail.com', 
+    'admin25@gmail.com', 
     'AdminUser', 
     crypt('securepassword', gen_salt('bf')), 
     10, 
